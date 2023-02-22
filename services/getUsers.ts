@@ -3,7 +3,7 @@ import { Octokit } from "octokit"
 
 export const getUsers = async (searchValue: string): Promise<any> => {
 	const octokit = new Octokit({
-		auth: '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'
+		auth: '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'
 	})
 	try{
 		const { data } = await octokit.request('GET /search/users', {q: searchValue})
